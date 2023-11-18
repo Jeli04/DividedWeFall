@@ -1,0 +1,12 @@
+img {
+    max-width: 244px;
+  }
+  
+  .wrapper {
+    max-height: 100vh;
+  }
+  
+  .loading {
+    width: 100px;
+    height: auto;
+  }

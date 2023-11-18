@@ -7,6 +7,7 @@ var log = function(entry) {
     fs.appendFileSync('/tmp/sample-app.log', new Date().toISOString() + ' - ' + entry + '\n');
 };
 
+
 var server = http.createServer(function (req, res) {
     if (req.method === 'POST') {
         var body = '';
@@ -37,3 +38,4 @@ server.listen(port);
 
 // Put a friendly message on the terminal
 console.log('Server running at http://127.0.0.1:' + port + '/');
+

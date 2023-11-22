@@ -1,22 +1,43 @@
 {
-  "name": "Divided-We-Fall",
-  "version": "0.0.1",
+  "name": "my-react-app",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "light-server": "^2.9.1",
-    "onnxruntime-web": "^1.16.2"
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "babel-plugin-macros": "^3.1.0",
+    "font-awesome": "^4.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.0",
+    "web-vitals": "^2.1.4"
   },
-  "main": "src/models/main.js",
   "scripts": {
-    "build": "npx webpack",
-    "serve": "npm run build && npx light-server -s . -p 8080",
-    "start": "npm run lite",
-    "lite": "lite-server"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "copy-webpack": "^2.0.5",
-    "lite-server": "^2.6.1",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
